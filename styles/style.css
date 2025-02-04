@@ -10,7 +10,7 @@ body{
     /*background-color:#bba58b;*/
 }
 
-.col{
+/* .col{
     background-color: rgb(250, 248, 246);
     
 }
@@ -26,7 +26,7 @@ body{
 }
 .grcl{
     -webkit-text-fill-color: green;
-}
+} */
     .top_bar{
         /*background-color:#a4835a;*/
         /*border-radius: 10px;*/
@@ -170,8 +170,6 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        align-content: center;
-        text-align: center;
         align-items: center;
         position: relative;
     }
@@ -184,21 +182,23 @@ body{
             position: absolute;
         } */
         .inside-disp{
-            
-            /* height: 300px; */
-            /* height: max-content; */
-            /* width: 450px;  */
+            display: flex;
+            box-sizing: border-box;
+            height: 300px;
+            height: max-content;
+            width: 450px;
+            width: auto;
             width: 60%;
-            /* height: auto; */
+            height: 55%;
             position: relative;
             background-color: rgba(255, 255, 255, 0.252);
-            /* top: 50%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%); */
-            position: absolute;
+            transform: translate(-50%,-50%);
+            position: relative;
             /* align-content: center; */
             /* z-index: 1000; */
-            text-align: center;
+            /* text-align: center; */
             /* align-items: center; */
             /* overflow-x:scroll; */
             
@@ -213,11 +213,11 @@ body{
             .inside-disp img{
                 top: 50%;
                 left: 50%;
-                height:80%;
-                width:60%;
-                transform: translate(-50%,-50%);
-                position: absolute;
-                object-fit: cover;
+                /* height:80%;
+                width:80%; */
+                /* transform: translate(-50%,-50%); */
+                /* position: absolute;
+                object-fit: cover; */
             }
 .srch_sz{
     display: flex;
@@ -267,15 +267,31 @@ body{
     width: 50px;
 
 }
+.body-footer{
+    padding: 1%;
+    background: #7193aae2;
+    text-align: center;
+    color: aliceblue;
+    /* left: 40%;
+    right: 40%; */
+
+}
 
 .foter{
-    background-color:rgba(255, 255, 255, 0.115);
+    padding: 2%;
+    background-color:rgba(0, 0, 0, 0.785);
     display: flex;
     text-align: center;
     align-items:center;
     justify-content:space-between;
     position:-ms-page;
+    color: aliceblue;
 }
-
+.foter a{
+    text-decoration: none;
+}
+.foter a:visited{
+    color: aliceblue;
+}
 /* Reset Styles */
 
