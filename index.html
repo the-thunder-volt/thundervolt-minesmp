@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title >playminesmp.fun</title>
+    <!-- <style>
+        body{
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        .col{
+            background-color: rgb(250, 248, 246);
+            
+        }
+        .ylcl{
+            -webkit-text-fill-color: #72aed6;
+        }
+        .rdcl{
+            -webkit-text-fill-color: red;
+        }
+
+        .blucl{
+            -webkit-text-fill-color: blue;
+        }
+        .grcl{
+            -webkit-text-fill-color: green;
+        }
+        .top_bar{
+            /*background-color:#a4835a;*/
+            /*border-radius: 10px;*/
+            /*height: 70px;*/
+            display: flex;
+            align-items:flex-start;
+            justify-items:start;
+            justify-content:space-between;
+            
+        }
+
+        img{
+            width: 150px;
+            text-align: center
+            
+        }
+        .asd{
+            align-content: center;
+            
+            
+           }
+        .aaa{
+          background-color: transparent;
+            border-radius: 50%;
+            width: 50px;
+            
+        }
+        .btn{
+            background-color:white;
+        }
+        .btn2{
+            background-color: #bba58b;
+            border:#bba58b;
+            border-radius: 11px;
+            text-align: center;
+
+        }
+        .btn2:after{
+            animation-fill-mode: forwards;
+        }
+        .search_input{
+            outline:none;
+            border: none;
+            background-color:transparent;
+
+        }
+        .search_input:after{
+            background-color:transparent;
+
+        }
+        .search_btn{
+            outline:none;
+            border: none;
+            border-radius: 20px;
+            background-color:transparent;
+
+        }
+        .disp{
+            width: 100%;
+            height: 400px;
+            background-image: url('images/Screenshot_20210422-214501_Twitter-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            align-content: center;
+            text-align: center;
+            align-items: center;
+            position: relative;
+
+
+        }
+        .disp img {
+            width: 100%;
+            height: auto;
+        }
+        .inside-disp{
+            height: 300px;
+            width: 450px;
+            background-color: rgba(255, 255, 255, 0.252);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            align-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .inside-disp:hover{
+            background-color: rgba(255, 255, 255, 0.362);
+        }
+        .inside-disp img{
+            top: 50%;
+            left: 50%;
+            height:80%;
+            width:60%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        .srch_sz{
+            display: flex;
+            justify-content: center;
+        }
+        .search_form{
+            background-color: rgba(255, 255, 255, 0.303);
+            border-radius: 20px;
+            display:flex;
+        }
+        .search_form:hover{
+            background-color: rgba(255, 255, 255, 0.414);
+        }
+        .search_form:after{
+            background-color: transparent;
+        }
+        .social_section{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .social_button{
+            background-color: transparent;
+            border: none;
+            border-radius: 10px;
+            filter: drop-shadow(2px 2px 2px #222);
+            background-size: contain;
+            background-size: no-repeat;
+        }
+        .soc_btn_img{
+            width: 50px;
+
+
+        }
+        .social_button img{
+            width: 50px;
+
+        }
+  
+    </style>
+     -->
+
+</head>
+
+<!-- <body background="D:\1vsc-programmes\sit's works\minesmp_fun\images\simple text CLG.png"> -->
+<!-- <body style="background-color: #a4835a;"> -->
+<body>
+    
+    <nav class="top_bar" >
+
+        <!-- <button class="menu_btn">☰</button>  -->
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="toggleMenu()">✖</button>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="teamimfo.html">Core Team</a></li>
+            </ul>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    
+        <!-- Menu Button -->
+        <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
+        <img src="images\mine_smp_text_logo.png" alt="">
+    </nav>
+    <div class="disp" id="dispbe" onclick="opeN()">
+    
+        <!-- <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt=""> -->
+         <div class="inside-disp">
+            <img src="images\mine_smp_text_logo.png" alt="">
+            <img src="images\srch.png" alt="">
+         </div>
+
+    </div>
+
+    <div style="height: 10px;">
+        <!-- empty space -->
+    </div>
+
+    <div class="srch_sz">
+        <form class="search_form" action="/images/srch.png">
+            <div style="height: 30px; width: 30px"></div>
+            <!-- <input style="" type="text" title="enter"> -->
+            <input class="search_input" size="45%" type="text" title="Type Here" name="first name" >
+            <button class="search_btn" title="Search">
+                <form action="" title="click to search">
+                    <img style="width:17px ;" src="images\srch.png" alt="">
+                </form>
+            </button>
+        </form>
+    </div>
+    <div style="height: 10px;">
+    </div>
+    <!-- <div style="display: flex; text-align: center; align-items:center;background-color:transpirant; border:50%">
+        <form action="indexh.html" >
+            <input style="outline:none; border: none; background-color: transparent;" type="text" title="enter">
+            <button style="background-color:transparent; color: green;">s</button>
+        </form>
+    </div> -->
+    <hr>
+    <div class="yt">
+        <iframe height="280px" width="350px" src="https://www.youtube.com/embed/7lKprpgDjaA?si=Dj0siX1cpvKjjYlg?zmute=1" frameborder="0"></iframe>
+    </div>
+    <article>
+        hello
+    </article>
+    <aside style="display: flex; text-align: center;">
+
+        <!-- <div> Search </div> | <div> Home </div><div> Feed </div> -->
+        <h3 style="text-align: center;">
+            hello
+        <!-- Search | Home | Feedj -->
+        </h3>
+    </aside>
+    <hr>
+    <div>
+        <div style="text-align: center;">
+            JOIN US!!
+
+        </div>
+        <div class="social_section">
+            <div>
+                <button class="social_button"title="Discord">
+                    <a href="https://discord.gg/ejB9vrvY3N">
+                        <img src="images\Blue-Discord-Logo-Icon-Transparent-Image.webp" alt="Discord">
+                    </a>
+                </button>
+            </div>
+            <div>
+                <button class="social_button"title="Socials">
+                    <a href="https://google.com">
+                        <img class="" src="images\mine_smp_text_logo.png" alt="Socials">
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+<hr>
+
+<footer>
+    <div style="height: 50px;">
+
+    </div>
+
+    <div class="foter">
+
+        <div style="text-align: center; text-decoration: none;">
+    
+            <div> F.A.Q. </div><div> <a style="text-decoration: none;" href=""> Support </a> </div><div> Feed </div>
+      
+        </div>
+    
+        <div style="text-align: center;">
+            <p>©play.minesmp.fun</p>
+            <p>all copyright reserved</p>
+        </div>
+    
+        <div style="text-decoration: none;">
+            <ul style="text-decoration: none;">designed by</ul>
+            <ul>minesmp team</ul> 
+        </div>
+    </div>
+    <div style="height: 50px;">
+
+    </div>
+</footer>
+
+</html>
