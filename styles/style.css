@@ -6,33 +6,14 @@ body{
     background-color: #2a9fee90;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
     /*background-color: rgba(112, 114, 128, 0.212);*/
     /*background-color:#bba58b;*/
 }
-
-/* .col{
-    background-color: rgb(250, 248, 246);
-    
-}
-.ylcl{
-    -webkit-text-fill-color: #72aed6;
-}
-.rdcl{
-    -webkit-text-fill-color: red;
-}
-
-.blucl{
-    -webkit-text-fill-color: blue;
-}
-.grcl{
-    -webkit-text-fill-color: green;
-} */
     
     .tops{
         display: flex;
         background-color: rgba(188, 6, 248, 0.882);
-        background-color: rgba(255, 128, 0, 0.8);
+        background-color: rgba(255, 166, 0, 0.659);
         position: fixed;
         width: 100%;
         max-height: 70px;;
@@ -218,8 +199,6 @@ body{
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 89%, 0.25);
-
         border-radius: 0.5rem;
         
     
@@ -318,45 +297,50 @@ body{
                 object-fit: cover; */
             }
 
-.search_input{
-    outline:none;
-    border: none;
-    background-color:transparent;
-}
-
-.search_input:focus{
-    background-color:transparent;
-
-}
-.search_btn{
-    outline:none;
-    border: none;
-    border-radius: 20px;
-    background-color:transparent;
-}
-.srch_sz{
+.search-div{
     display: flex;
-    justify-content: center;
-    height: 30px;
-    width: 100%;
-    /* align-content: center;
-    align-items: center; */
-    /* background-color: #fff; */
+    justify-content: center; /* Centers horizontally */
+                align-items: center;
+                height: 35px;
+                    
+                    
 }
-    .search_form{
+    .search-container{
+        height: 30px;
         background-color: rgba(255, 255, 255, 0.303);
-        border-radius: 20px;
-        display:flex;
-        max-width: 80%;
-
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        justify-content: space-between;
+                        
+                        
     }
-        .search_form:hover{
-            background-color: rgba(255, 255, 255, 0.414);
-            background: white;
+    .search-container:hover{
+        background-color: rgba(255, 255, 255, 0.414);
+        background: white;
+    }
+        .search_input{
+            outline:none;
+            border: none;
+            width: 85%;
+            max-width: fit-content;
+            height: 20px;
+            background: transparent;
         }
-        .search_form:after{
-            background-color: transparent;
+            
+            .search_btn{
+            outline:none;
+            border: none;
+            /* border-radius: 20px; */
+            background-color:transparent;
         }
+    /* ^^-------------- search container */
+            
+/* ^^------------------ search div */
+            
+                
 .yt{
     align-content: center;
     text-align: center;
