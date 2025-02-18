@@ -6,89 +6,137 @@
     <title>Team</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        .bd{
-            margin: 2%;
-            padding: 2%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            background-color: rgba(0, 0, 0, 0.073);
-            flex-direction: row;
-            align-items: center;
+        body{
             box-sizing: border-box;
-            align-content: center;
-            justify-content: center;
+            overflow-x: hidden;
             
         }
-        .profile_card{
-            height: 300px;
-            width: 260px;
-            background: white;
-            filter: drop-shadow(5px 5px 5px #2222227f);
-            border-radius: 10px;
-        }
-        .profile_card:hover{
-            transform: scale(1.05);
-            transition-delay: 0.2s;
-        }
-
-        .profile_card img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: aquamarine;
+        .fake-space-70px{
             height: 70px;
-            width: 70px;
+            width: 100%;
         }
+            .main-container{
+
+                height: 100%;
+
+            }
+                .profile-container{
+                    justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    background-color: rgba(0, 0, 0, 0.073);
+                    background-color: transparent;
+                    align-items: center;
+                    max-width: 100%;
+                }
+                /*.profile-container{
+                    justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    background-color: rgba(0, 0, 0, 0.073);
+                    flex-direction: row;
+                    align-items: center;
+                    box-sizing: border-box;
+                }*/
+                    .profile_card{
+                        height: 300px;
+                        width: 260px;
+                        background: white;
+                        filter: drop-shadow(5px 5px 5px #2222227f);
+                        border-radius: 10px;
+                    }
+                    .profile_card:hover{
+                        transform: scale(1.05);
+                        transition-delay: 0.2s;
+                    }
+
+                    .profile_card img{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: aquamarine;
+                        height: 70px;
+                        width: 70px;
+                    }
     </style>
 </head>
-<body >
-    <div class="bd"> 
-        <div class="profile_card">
-            <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
-            <hr width="80%">
-            <p>
-                <ul>
-                    <li>name</li>
-                    <li>Address</li>
-                </ul>
-            </p>
-        </div>
-        <div class="profile_card">
-            <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
-            <hr width="80%">
-            <p>
-                <ul>
-                    <li>name</li>
-                    <li>Address</li>
-                </ul>
-            </p>
-        </div>
-        <div class="profile_card">
-            <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
-            <hr width="80%">
-            <p>
-                <ul>
-                    <li>name</li>
-                    <li>Address</li>
-                </ul>
-            </p>
-        </div>
-        <div class="profile_card">
-            <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
-            <hr width="80%">
-            <p>
-                <ul>
-                    <li>name</li>
-                    <li>Address</li>
-                </ul>
-            </p>
-        </div>
+<nav class="tops">
+        <div class="top_bar" >
 
+            <!-- <button class="menu_btn">☰</button>  -->
+            <div class="sidebar" id="sidebar">
+                <button class="close-btn" onclick="toggleMenu()">✖</button>
+                <ul>
+                    <li><a href="#dispbe">Overview</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="teamimfo.html">Core Team</a></li>
+                </ul>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    
+        
+            <!-- Menu Button -->
+            <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
+        </div>
+        <img class="rtp-logo" src="images\mine_smp_text_logo.png" alt="">
+
+    </nav>
+<body>
+    <div class="fake-space-70px"></div>
+    <div class="fake-space-70px"></div>
+    <div class="main-container">
+        <div class="profile-container">
+            <div class="profile_card">
+                <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
+                <hr width="80%">
+                <p>
+                    <ul>
+                        <li>name</li>
+                        <li>Address</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="profile_card">
+                <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
+                <hr width="80%">
+                <p>
+                    <ul>
+                        <li>name</li>
+                        <li>Address</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="profile_card">
+                <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
+                <hr width="80%">
+                <p>
+                    <ul>
+                        <li>name</li>
+                        <li>Address</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="profile_card">
+                <img src="images\Screenshot_20210422-214501_Twitter-1.jpg" alt="">
+                <hr width="80%">
+                <p>
+                    <ul>
+                        <li>name</li>
+                        <li>Address</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </div>
+    
 </body>
+<div class="fake-space-70px"></div>
+<div class="fake-space-70px"></div>
 <footer class="main-footer">
     <!-- <div style="height: 50px;">
     
@@ -96,7 +144,11 @@
     <div style="height: 50px;">
 
     </div> -->
+    <div class="socials">
+        <div>insta</div>
+        <div>fb</div>
 
+    </div>
     <div class="foter">
         <div>
             <ul class="xd">
@@ -116,7 +168,7 @@
         </div>
     
         <div style="text-align: center;">
-            <p></p>
+            <p>Resources</p>
         </div>
     
         <div style="text-decoration: none;">
@@ -131,5 +183,4 @@
         <p>all copyright reserved</p>
     </div>
 </footer>
-
 </html>
