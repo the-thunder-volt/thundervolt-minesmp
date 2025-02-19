@@ -33,16 +33,6 @@
                     align-items: center;
                     max-width: 100%;
                 }
-                /*.profile-container{
-                    justify-content: center;
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    background-color: rgba(0, 0, 0, 0.073);
-                    flex-direction: row;
-                    align-items: center;
-                    box-sizing: border-box;
-                }*/
                     .profile_card{
                         height: 300px;
                         width: 260px;
@@ -68,23 +58,28 @@
     </style>
 </head>
 <nav class="tops">
-        <div class="top_bar" >
-
-            <!-- <button class="menu_btn">☰</button>  -->
-            <div class="sidebar" id="sidebar">
+    <div class="top_bar" >
+        <div class="sidebar" id="sidebar">
+            <div class="menu-head">
                 <button class="close-btn" onclick="toggleMenu()">✖</button>
-                <ul>
-                    <li><a href="#dispbe">Overview</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Forms</a></li>
-                    <li><a href="teamimfo.html">Core Team</a></li>
-                </ul>
-            </div>
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+                <div class="menu-logo">
+                    <img src="images\MINESMP_GLOW_Text_Effect.png" alt="">
+                </div>
+            </div>                
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#dispbe">Overview</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="teamimfo.html">Core Team</a></li>
+            </ul>
         </div>
-        <img class="rtp-logo" src="images\mine_smp_text_logo.png" alt="">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    </nav>
+    </div>
+    <img class="rtp-logo" src="images\mine_smp_text_logo.png" alt="">
+
+</nav>
 <body>
     <div class="fake-space-70px"></div>
     <div class="fake-space-70px"></div>
@@ -137,6 +132,7 @@
 <div class="fake-space-70px"></div>
 <div class="fake-space-70px"></div>
 <footer class="main-footer">
+
     <div class="socials">
         <div>insta</div>
         <div>fb</div>
