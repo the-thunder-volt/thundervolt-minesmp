@@ -315,7 +315,7 @@ body{
             .search-container{
                 height: 30px;
                 background-color: rgba(255, 255, 255, 0.303);
-                width: 400px;
+                width: 350px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
